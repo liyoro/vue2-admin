@@ -40,6 +40,22 @@ node v14.18.3 (npm v6.14.15)
 
 ## iconfont
 
+### 引入
+
+下载的文件，放`assets`-`iconfont`目录下面
+
+### 配置
+
+在`main.js`里面配置
+
 ```
 import "@/assets/iconfont/iconfont.css"
+```
+
+### 使用
+
+xxx是图标名称
+
+```
+<i class='iconfont xxx' />
 ```

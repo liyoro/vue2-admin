@@ -59,3 +59,25 @@ xxx是图标名称
 ```
 <i class='iconfont xxx' />
 ```
+
+## 代码总览
+
+``` 
+|-- public
+	|-- data	// mock接口数据
+|-- src
+	|-- api	// 接口
+	|-- assets	// 图片、字体、iconfont
+    |-- components 	// 组件
+    |-- config		// 全局配置文件
+    |-- directive		// 指令
+    |-- filters		// vue全局过滤器
+    |-- layout		// 项目总体布局文件
+    |-- plugins	// 主要是element配置
+    |-- router		// 项目路由配置
+    |-- store		// 项目vuex配置
+    |-- styles 	// css配置
+    |-- utils 		// 工具类、请求
+    |-- views		//
+|-- main.js    // 全局配置
+```

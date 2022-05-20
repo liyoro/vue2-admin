@@ -1,6 +1,6 @@
 # vue2-admin
 
-vue2开发框架，提取自 [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin/)，稍微做了修改和更新
+vue2开发框架，提取自 [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin/)，稍微做了修改和更新，自家用
 
 ## Project setup
 ```
@@ -79,5 +79,6 @@ xxx是图标名称
     |-- styles 	// css配置
     |-- utils 		// 工具类、请求
     |-- views		//
+        |-- bigscreen   // 大屏页面，响应式
 |-- main.js    // 全局配置
 ```

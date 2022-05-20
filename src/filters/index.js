@@ -66,3 +66,35 @@ export function toThousandFilter(num) {
 export function uppercaseFirst(string) {
   return string.charAt(0).toUpperCase() + string.slice(1)
 }
+
+/*
+ * 时间戳转时间
+ * <template slot-scope="scope">
+    {{ scope.row.xxx | formatDate }}
+   </template>
+*/
+export function formatDate(str) {
+  let fmt = 'yyyy-MM-dd hh:mm:ss'
+  const date = new Date(str)
+  if (/(y+)/.test(fmt)) {
+    fmt = fmt.replace(RegExp.$1, (date.getFullYear() + '').substr(4 - RegExp.$1.length))
+  }
+  const o = {
+    'M+': date.getMonth() + 1,
+    'd+': date.getDate(),
+    'h+': date.getHours(),
+    'm+': date.getMinutes(),
+    's+': date.getSeconds()
+  }
+  for (const k in o) {
+    if (new RegExp(`(${k})`).test(fmt)) {
+      const str = o[k] + ''
+      fmt = fmt.replace(RegExp.$1, RegExp.$1.length === 1 ? str : padLeftZero(str))
+    }
+  }
+  return fmt
+}
+
+function padLeftZero(str) {
+  return ('00' + str).substr(str.length)
+}

@@ -77,6 +77,15 @@ export const asyncRoutes = [
     ]
   },
   {
+    path: '/bigscreen',
+    name: 'bigscreen',
+    component: () => import('@/views/bigscreen/index.vue'),
+    meta: {
+      title: '大屏',
+      icon: 'el-icon-s-platform'
+    }
+  },
+  {
     path: '/example1',
     component: Layout,
     redirect: '/example1/sub1',

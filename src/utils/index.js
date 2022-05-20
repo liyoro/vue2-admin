@@ -272,3 +272,17 @@ export function createUniqueString() {
   const randomNum = parseInt((1 + Math.random()) * 65536) + ''
   return (+(randomNum + timestamp)).toString(32)
 }
+
+// 对象数组{arrayToSearch}中，搜索属性{attr}值为{val}的对象
+export function findElem(arrayToSearch, attr, val) {
+  if (arrayToSearch != null) {
+    for (var i = 0; i < arrayToSearch.length; i++) {
+      if (arrayToSearch[i][attr] === val) {
+        return i
+      }
+    }
+  } else {
+    return -1
+  }
+  return -1
+}

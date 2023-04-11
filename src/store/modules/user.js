@@ -31,13 +31,13 @@ const actions = {
     const { username, password } = userInfo
     return new Promise((resolve, reject) => {
       login({ username: username.trim(), password: password })
-        .then((response) => {
+        .then(response => {
           const { data } = response
           commit('SET_TOKEN', data.token)
           setToken(data.token)
           resolve()
         })
-        .catch((error) => {
+        .catch(error => {
           reject(error)
         })
     })
@@ -47,7 +47,7 @@ const actions = {
   getInfo({ commit, state }) {
     return new Promise((resolve, reject) => {
       getInfo(state.token)
-        .then((response) => {
+        .then(response => {
           const { data } = response
 
           if (!data) {
@@ -64,14 +64,16 @@ const actions = {
           commit('SET_ROLES', roles)
           resolve(data)
         })
-        .catch((error) => {
+        .catch(error => {
           reject(error)
         })
     })
   },
 
   // user logout
+  // eslint-disable-next-line no-unused-vars
   logout({ commit, state, dispatch }) {
+    // eslint-disable-next-line no-unused-vars
     return new Promise((resolve, reject) => {
       // logout(state.token).then(() => {
       commit('SET_TOKEN', '')
@@ -92,7 +94,7 @@ const actions = {
 
   // remove token
   resetToken({ commit }) {
-    return new Promise((resolve) => {
+    return new Promise(resolve => {
       commit('SET_TOKEN', '')
       commit('SET_ROLES', [])
       removeToken()

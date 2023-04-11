@@ -63,14 +63,14 @@ import {
   MessageBox,
   Message,
   Scrollbar
-//   Icon,
-//   Loading,
-//   Link,
-//   Transfer,
-//   Collapse,
-//   CollapseItem,
-//   Rate,
-//   Spinner,
+  //   Icon,
+  //   Loading,
+  //   Link,
+  //   Transfer,
+  //   Collapse,
+  //   CollapseItem,
+  //   Rate,
+  //   Spinner,
 } from 'element-ui'
 
 Vue.use(Pagination)

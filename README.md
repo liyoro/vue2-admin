@@ -1,26 +1,27 @@
-# vue2-admin
+# vue2-vite-admin
 
-vue2开发框架，提取自 [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin/)，稍微做了修改和更新，自家用
+vue2开发框架，提取自 [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin/)，稍微做了修改和更新，自家用。
+
+`pnpm` + `vite` + `vue2`
 
 ## Project setup
+
 ```
-npm install
+pnpm install
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
-npm run serve
+pnpm run serve
 ```
 
 ### Compiles and minifies for production
+
 ```
-npm run build
+pnpm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
@@ -29,7 +30,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ## 环境
 
 ```
-node v14.18.3 (npm v6.14.15)
+nvm use v16.19.1
 ```
 
 ### Variable '' is already declared in the upper scope.
@@ -81,4 +82,9 @@ xxx是图标名称
     |-- views		//
         |-- bigscreen   // 大屏页面，响应式
 |-- main.js    // 全局配置
+```
+
+
+```
+// eslint-disable-next-line no-unused-vars
 ```

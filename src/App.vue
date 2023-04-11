@@ -10,5 +10,4 @@ export default {
 }
 </script>
 
-<style scope lang="scss">
-</style>
+<style scope lang="scss"></style>

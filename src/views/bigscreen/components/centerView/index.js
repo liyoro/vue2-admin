@@ -34,8 +34,8 @@ export default {
   methods: {
     initData() {
     },
-    // 中间
-    initMap(url) {
+    // 中间 url
+    initMap() {
     }
   },
   watch: {}

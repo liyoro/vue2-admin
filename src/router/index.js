@@ -82,7 +82,7 @@ export const asyncRoutes = [
     component: () => import('@/views/bigscreen/index.vue'),
     meta: {
       title: '大屏',
-      icon: 'el-icon-s-platform'
+      icon: 'icon-chart'
     }
   },
   {
@@ -111,12 +111,13 @@ export const asyncRoutes = [
   }
 ]
 
-const createRouter = () => new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
-  scrollBehavior: () => ({ y: 0 }),
-  routes: constantRoutes
-})
+const createRouter = () =>
+  new VueRouter({
+    mode: 'history',
+    base: import.meta.env.BASE_URL,
+    scrollBehavior: () => ({ y: 0 }),
+    routes: constantRoutes
+  })
 
 const router = createRouter()
 

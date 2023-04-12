@@ -48,6 +48,9 @@ devDependencies:
   '@vitejs/plugin-vue':
     specifier: ^4.1.0
     version: 4.1.0(vite@3.2.5)(vue@2.6.14)
+  echarts:
+    specifier: ^5.4.2
+    version: 5.4.2
   eslint:
     specifier: ^8.26.0
     version: 8.26.0
@@ -69,6 +72,9 @@ devDependencies:
   unplugin-vue-components:
     specifier: ^0.24.1
     version: 0.24.1(rollup@2.79.1)(vue@2.6.14)
+  uuid:
+    specifier: ^9.0.0
+    version: 9.0.0
   vite:
     specifier: 3.2.5
     version: 3.2.5(sass@1.55.0)
@@ -1633,6 +1639,13 @@ packages:
       tslib: 2.5.0
     dev: true
 
+  /echarts@5.4.2:
+    resolution: {integrity: sha512-2W3vw3oI2tWJdyAz+b8DuWS0nfXtSDqlDmqgin/lfzbkB01cuMEN66KWBlmur3YMp5nEDEEt5s23pllnAzB4EA==}
+    dependencies:
+      tslib: 2.3.0
+      zrender: 5.4.3
+    dev: true
+
   /electron-to-chromium@1.4.357:
     resolution: {integrity: sha512-UTkCbNTAcGXABmEnQrGcW4m3cG6fcyBfD4KDF0iyEAlbrGZiY9dmslyDAGOD1Kr5biN2F743Y30aRCOtau35Vw==}
     dev: true
@@ -2903,6 +2916,10 @@ packages:
       is-number: 7.0.0
     dev: true
 
+  /tslib@2.3.0:
+    resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==}
+    dev: true
+
   /tslib@2.5.0:
     resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==}
     dev: true
@@ -2993,6 +3010,11 @@ packages:
 
   /util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
+    dev: true
+
+  /uuid@9.0.0:
+    resolution: {integrity: sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==}
+    hasBin: true
     dev: true
 
   /vite-babel-plugin@0.0.2(rollup@2.79.1)(vite@3.2.5):
@@ -3289,4 +3311,10 @@ packages:
   /yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+    dev: true
+
+  /zrender@5.4.3:
+    resolution: {integrity: sha512-DRUM4ZLnoaT0PBVvGBDO9oWIDBKFdAVieNWxWwK0niYzJCMwGchRk21/hsE+RKkIveH3XHCyvXcJDkgLVvfizQ==}
+    dependencies:
+      tslib: 2.3.0
     dev: true

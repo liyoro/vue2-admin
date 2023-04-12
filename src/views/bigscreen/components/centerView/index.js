@@ -8,6 +8,9 @@ import { mapGetters } from 'vuex'
 
 export default {
   name: 'CenterView',
+  components: {
+    'g-map-view': () => import('@/components/chart/map/g-map-view.vue')
+  },
   props: {
     data: {
       type: Object,
@@ -29,14 +32,11 @@ export default {
   created() {
     this.initData()
   },
-  updated() {
-  },
+  updated() {},
   methods: {
-    initData() {
-    },
+    initData() {},
     // 中间 url
-    initMap() {
-    }
+    initMap() {}
   },
   watch: {}
 }

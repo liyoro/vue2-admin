@@ -1,7 +1,6 @@
 <template>
   <div class="center-view">
-    <div class="title">标题</div>
-    放地图 {{ data.d }}
+    <g-map-view class="map-view" />
   </div>
 </template>
 

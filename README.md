@@ -1,6 +1,7 @@
 # vue2-vite-admin
 
-vue2开发框架，提取自 [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin/)，稍微做了修改和更新，自家用。
+vue2 开发框架，提取自 [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin/)，稍微做了修改和更新，自家用
+。
 
 `pnpm` + `vite` + `vue2`
 
@@ -22,10 +23,9 @@ pnpm run serve
 pnpm run build
 ```
 
-
 ### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
 
+See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## 环境
 
@@ -55,7 +55,7 @@ import "@/assets/iconfont/iconfont.css"
 
 ### 使用
 
-xxx是图标名称
+xxx 是图标名称
 
 ```
 <i class='iconfont xxx' />
@@ -63,7 +63,7 @@ xxx是图标名称
 
 ## 代码总览
 
-``` 
+```
 |-- public
 	|-- data	// mock接口数据
 |-- src
@@ -84,7 +84,26 @@ xxx是图标名称
 |-- main.js    // 全局配置
 ```
 
-
 ```
 // eslint-disable-next-line no-unused-vars
+```
+
+## 关于 eslint
+
+不喜欢严格的代码规范，可以关闭
+
+文件 `vite.config.js`
+
+注释
+
+```
+import eslintPlugin from 'vite-plugin-eslint'
+```
+
+```
+eslintPlugin({
+    include: ['src/**/*.js', 'src/**/*.vue'],
+    exclude: ['node_modules/**'],
+    cache: false // 禁用 eslint 缓存
+})
 ```

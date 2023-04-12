@@ -1,0 +1,14 @@
+/* 
+*   
+*   1、引入字体
+*   @import "@/assets/font/font.css";
+*   2、css
+*   font-family: "PangMenZhengDao-3";
+*/
+
+@font-face {
+    font-family: 'PangMenZhengDao-3'; /* 重命名字体名 */
+    src: url('./PangMenZhengDao-3.ttf');
+    font-weight: normal;
+    font-style: normal;
+}

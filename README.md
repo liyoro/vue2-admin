@@ -3,7 +3,7 @@
 vue2 开发框架，提取自 [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin/)，稍微做了修改和更新，自家用
 。
 
-`pnpm` + `vite` + `vue2`
+`pnpm` + `vite` + `vue2` + `echarts 5`
 
 ## Project setup
 
